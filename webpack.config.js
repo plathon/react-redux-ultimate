@@ -13,6 +13,10 @@ module.exports = {
     publicPath: '/static/'
   },
 
+  eslint: {
+    configFile: './.eslintrc'
+  },
+
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),

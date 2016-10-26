@@ -16,7 +16,7 @@ module.exports = lodash.merge(baseConfig, {
 	    loaders: [{
 	      	test: /\.js$/,
 	      	loaders: ['react-hot', 'babel'],
-	    	include: path.join(__dirname, '../src')
+	    		include: path.join(__dirname, '../src')
 	    }]
 	}
 

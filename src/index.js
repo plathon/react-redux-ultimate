@@ -11,7 +11,8 @@ import * as reducers from './reducers'
 
 import App from './App';
 import UserContainer from './containers/user/UserContainer'
-
+import RegisterContainer from './containers/register/RegisterContainer'
+import AuthenticationContainer from './containers/authentication/AuthenticationContainer'
 const reducer = combineReducers({
 	...reducers,
 	routing: routerReducer,
@@ -41,6 +42,8 @@ render(
 		<Provider store={store}>
 		    <Router history={history}>
 			    <Route path="/" component={UserContainer}/>
+					<Route path="/signup" component={RegisterContainer}/>
+					<Route path="/signin" component={AuthenticationContainer}/>
 		    </Router>
 		</Provider>
 	</div>,
